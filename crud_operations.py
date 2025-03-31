@@ -86,7 +86,7 @@ def manage_crud():
         elif table == "claims":
             food_id = st.number_input("Food ID", min_value=1)
             receiver_id = st.number_input("Receiver ID", min_value=1)
-            status = st.selectbox("Status", ["Pending", "Completed", "Canceled"])
+            status = st.selectbox("Status", ["Pending", "Completed", "Cancelled"])
             # Capture the current timestamp when the button is clicked
             current_timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -148,7 +148,7 @@ def manage_crud():
 
             elif table == "claims":
                 if column_name == "Status":
-                    new_value = st.selectbox("New Value", ["Pending", "Completed", "Canceled"])
+                    new_value = st.selectbox("New Value", ["Pending", "Completed", "Cancelled"])
                 elif column_name == "Timestamp":
                     fill_option = st.radio("Select Input Method for Timestamp", ["Autofill (Current Time)", "Fill Manually"])
 

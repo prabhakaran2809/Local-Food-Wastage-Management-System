@@ -2,7 +2,6 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 from datetime import datetime
-from st_aggrid import AgGrid, GridOptionsBuilder
 
 def get_db_connection():
     return sqlite3.connect("DS_Project_local_food_wastage_database.db", check_same_thread=False)

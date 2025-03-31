@@ -25,7 +25,7 @@ How to Run the Project:
 
     -Clone the repository and navigate to the project directory.
     -Create and activate a virtual environment:
-        Windows: python -m venv venv && venv\Scripts\activate
+        Windows: python -m venv venv && .\venv\Scripts\activate
         Mac/Linux: python -m venv venv && source venv/bin/activate
     -Install the required dependencies using pip install -r requirements.txt.
     -Run the Streamlit app with streamlit run main.py.
